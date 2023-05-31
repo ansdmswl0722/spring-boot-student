@@ -10,7 +10,7 @@ public class StudentWebController {
 
     @GetMapping("/web/students/{id}")
     public String getStudent(@PathVariable Long id, Model model) {
-       model.addAttribute("student",new Student(1L,"moon",10));
+       model.addAttribute("student",new Student(1L,"moon",100));
         return "student";
 
     }
